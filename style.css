@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    background-image: url(image/background.png);
+}
+
+.header{
+    background: linear-gradient(#00fff2, rgb(149, 196, 238));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .header h1 {
+    font-size: 300%;
+  }
+
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.photo img {
+  width: 100%; 
+  max-width: 200px; 
+  min-height: 180px;
+  height: auto;
+  border-radius: 15%;
+}
+
+.pizza {
+  opacity: 0;
+}
+
+.moi:hover .pizza{
+  opacity: 1;
+}
+
+.moi:hover .costard{
+  opacity: 0;
+}
+
+.content {
+  background-color: rgb(149, 196, 238);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.paragraphe1 {
+  background-color: white;
+  border-radius: 10%;
+  border: 2px solid rgb(83, 99, 238); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;  
+}
+
+.footer {
+  background: linear-gradient(rgb(149, 196, 238), rgb(61, 138, 206));
+  color: #ffffff;  
+}
+
+.footest {
+  background-color: rgb(61, 138, 206);
+  color: #ffffff;   
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.gitoub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button{
+  margin-right: 40%;
+  margin-left: 45%;
+}
+
+h1,h2 { 
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.paragraphe1 *{
+  text-align: center;
+  color: black;
+  font-family: "Inria Sans", serif;
+}
+
+.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
