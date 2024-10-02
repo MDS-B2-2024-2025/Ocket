@@ -1,0 +1,1 @@
+Lorsque vous téléchargez tous les fichiers, extrayez le fichier splide au même niveau que les fichiers html, css, js, etc.
